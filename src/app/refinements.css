@@ -1,0 +1,35 @@
+/* Mobile is the primary canvas: planets replace the bottom menu. */
+.heart-transition{position:fixed;inset:0;z-index:100;overflow:hidden;pointer-events:auto;contain:layout paint}
+.heart-veil{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 50%,#24152b,#070611 72%);opacity:0}
+.heart-core{position:absolute;top:42%;left:0;right:0;text-align:center;color:#e3adc8;opacity:0}
+.heart-core>span{display:block;font-family:Georgia,serif;font-size:100px;line-height:1;text-shadow:0 0 60px #c487bd55}
+.heart-core small{display:block;margin-top:24px;font-size:8px;letter-spacing:3px;color:#cdb7ce}
+.heart-particle{position:absolute;display:block;opacity:0;color:#e9a6c3;will-change:transform,opacity;pointer-events:none;font-family:Georgia,serif}
+.heart-particle.tone-1{color:#bba1dc}.heart-particle.tone-2{color:#e9cdad}
+.personal-emoji{display:inline-block;font-family:system-ui;font-size:.7em;margin-left:.25em;vertical-align:middle}
+.world-panel{animation:world-arrive 1.7s both}.finale{animation:world-arrive 1.8s both}
+@keyframes world-arrive{0%,20%{opacity:0;transform:translateY(12px)}100%{opacity:1;transform:translateY(0)}}
+@media(max-width:700px){
+ .world-navigation,.world-navigation.compact{display:none}
+ .is-fallback .world-navigation{display:grid}
+ .is-fallback .world-navigation.compact{display:flex}
+ .universe-title{top:14svh}
+ .universe-title h1{font-size:clamp(59px,18vw,82px);margin:12px 0 0}
+ .universe-title p{font-size:clamp(20px,5.8vw,25px)}
+ .title-whisper{font-size:9px}
+ .explore-hint{bottom:12svh;font-size:17px}
+ .explore-hint small{font-size:7px;letter-spacing:1.2px}
+ .universe-footer{bottom:max(25px,env(safe-area-inset-bottom));font-size:7px;gap:18px}
+ .universe-footer>span{max-width:48%;text-align:right;line-height:1.8}
+ .world-panel,.finale{padding-bottom:max(40px,env(safe-area-inset-bottom))}
+ .is-fallback .world-panel,.is-fallback .finale{padding-bottom:95px}
+ .planet-label{min-width:94px;min-height:44px;justify-content:center}
+ .planet-label strong{font-size:16px;line-height:1.15}
+ .coordinate{font-size:6px;letter-spacing:1px}
+ .secret-star{top:33%}
+ .heart-core>span{font-size:88px}
+ .heart-core small{font-size:7px;letter-spacing:2.3px}
+ .site-header{padding-top:env(safe-area-inset-top)}
+}
+@media(max-width:370px){.brand{font-size:6px;letter-spacing:1.4px}.brand b{letter-spacing:2px}.brand-symbol{font-size:25px}.header-right{gap:6px}.audio-control input{width:24px}.letter-link{font-size:8px}.universe-title>.eyebrow{font-size:5.5px;letter-spacing:1px}.planet-label strong{font-size:14px}}
+@media(prefers-reduced-motion:reduce){.heart-transition{display:none}.world-panel,.finale{animation:none}}

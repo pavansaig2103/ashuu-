@@ -1,5 +1,9 @@
 # Verification
 
+## Mobile and heart-transition update
+
+Verified the portrait layout at 390 × 844 and 360 × 740. The bottom tabs are hidden on mobile; all five planet labels were selected using actual touch coordinates. Labels remained inside the viewport. Desktop tabs remain visible. The heart veil opens the letter once, completes, and removes its overlay; reduced motion bypasses it. Production build and TypeScript passed, with zero captured browser errors in the mobile run. Early intro skipping now remains skipped when the scene finishes loading.
+
 Production export and TypeScript validation passed. Headless Chrome tested at 1440 × 1000 and 390 × 844, with screenshots visually reviewed.
 
 - Full timed introduction: September 2023, personal story, cosmic journey and automatic ASHWAK reveal passed. Skip and reduced-motion bypass passed.

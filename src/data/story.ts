@@ -1,4 +1,7 @@
 ﻿// All personal copy is editable here. No dates or stories have been inferred from photographs.
+export const worldEmojis = ['📸','🤭','💌','💜','✨'];
+// A portrait composition for touch screens; camera targets share these positions.
+export const mobilePositions: [number,number,number][] = [[-3.8,2,0],[-3.6,-3,1],[3.7,2,-1],[3.5,-2.9,0],[0,-6.5,1]];
 export const worlds = [
  {name:'Our memories',subtitle:'The moments that stayed.',color:'#929bff',position:[-7,1.6,0],radius:1.1,kind:0},
  {name:'Our madness',subtitle:'A little chaos. A lot of us.',color:'#d49477',position:[-3,-2.4,2],radius:.72,kind:1},

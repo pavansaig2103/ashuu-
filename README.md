@@ -11,6 +11,12 @@ npm run dev
 
 Open http://127.0.0.1:3000. Build a portable static site with `npm run build`; deploy the generated `out/` directory on any static host. The production site does not require a Node server.
 
+## Deploy on Vercel
+
+Import this GitHub repository as a new Vercel project. The application is at the repository root. Use the Next.js framework preset, `npm ci` to install, `npm run build` to build, and `out` as the output directory; these settings are included in `vercel.json`. Select Node.js 24 in the Vercel project settings. No environment variables or backend services are required. `npm start` / `npm run preview` serves the exported build locally on port 3001.
+
+Mobile now uses a portrait arrangement of the five planets, with the bottom world tabs hidden. Tap a planet or its label to enter a world; the return link takes you back. If WebGL is unavailable, the text navigation stays visible so every world remains accessible. A coordinated heart transition introduces the letter; reduced motion opens it immediately.
+
 ## Personalize
 
 Edit `src/data/story.ts` for world names, memory captions, sealed messages, inside jokes and the final letter. The supplied letter is an editable draft. Add actual jokes to `insideJokes` rather than inventing them. Photographs and videos live in `public/images` and `public/videos`; original source assets remain untouched in `../assets`.
