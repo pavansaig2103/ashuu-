@@ -13,7 +13,7 @@ Open http://127.0.0.1:3000. Build a portable static site with `npm run build`; d
 
 ## Deploy on Vercel
 
-Import this GitHub repository as a new Vercel project. The application is at the repository root. Use the Next.js framework preset, `npm ci` to install, `npm run build` to build, and `out` as the output directory; these settings are included in `vercel.json`. Select Node.js 24 in the Vercel project settings. No environment variables or backend services are required. `npm start` / `npm run preview` serves the exported build locally on port 3001.
+Import this GitHub repository as a new Vercel project. The application is at the repository root. Use the Next.js framework preset, `npm ci` to install, `npm run build` to build, and `out` as the output directory; these settings are included in `vercel.json`. Use Node.js 26 in the Vercel project settings (the version used for the production build). No environment variables or backend services are required. `npm start` / `npm run preview` serves the exported build locally on port 3001.
 
 Mobile now uses a portrait arrangement of the five planets, with the bottom world tabs hidden. Tap a planet or its label to enter a world; the return link takes you back. If WebGL is unavailable, the text navigation stays visible so every world remains accessible. A coordinated heart transition introduces the letter; reduced motion opens it immediately.
 
